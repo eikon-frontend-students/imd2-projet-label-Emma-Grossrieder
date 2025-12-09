@@ -1,6 +1,125 @@
 
 
-body {
-
-  background-color: #5c5c5c;
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Black.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-Black.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 800;
 }
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Bold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-Bold.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-SemiBold.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 600;
+  }
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Medium.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-Medium.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 500;
+  }
+
+ @font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-Regular.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 400;
+  }
+
+@font-face {
+    font-family: 'NohemiSemibold';
+    src: url('../fonts/Nohemi-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-SemiBold.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 300;
+  }
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Light.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-Light.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 200;
+  }
+
+ 
+  
+
+img {
+  max-width: 100%;
+  height: auto;;
+}
+
+body {
+  font-family: 'Nohemi', sans-serif;
+  margin: 0px;
+  background-color: #5c5c5c;
+  color: white;
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+   background-color: black;
+   height: 100px;
+  }
+
+.heroContainer{ 
+  background-image: url("../pasbourreimg.png");   
+
+  background-position: center; 
+  background-repeat: no-repeat;
+   content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0; */
+  background-image: url("../pasbourreimg.png");
+  background-size: cover; /* adapte l'image à la taille du conteneur */
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1; /* derrière le contenu */
+  opacity: 1; 
+  margin-top: 140px;
+  }
+  
+  .flecheHero{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 30px;
+   margin-top: 300px;
+  }
+
+.bouton{
+   font-size: 20px;
+   font-weight: 500;
+   font-style: normal;
+   line-height: normal;
+   letter-spacing: 0.8px;
+   color: #ffffff;
+   text-decoration: none;
+}
+
