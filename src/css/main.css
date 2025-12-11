@@ -105,7 +105,6 @@ nav {
   z-index: 1; 
   opacity: 1; 
   margin-top: 140px;                   
-  background-size: cover;
   background-position: center;
   background:
     linear-gradient(
@@ -123,6 +122,7 @@ nav {
     font-weight: 100;
     font-style: normal;
     color: #ffffff;
+    margin: 0px;
   }
 
   .textTITREhero {
@@ -131,19 +131,21 @@ nav {
     font-style: normal;
     color: #ffffff;
     line-height: 115px;
-    margin-top: -40px;
+    margin: 0px;
   }
 
   .textHero{
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
 
   .heroContent{
     margin-left: 50px;
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row;   
+    align-items: flex-end;
+    justify-content: space-between;
   }
   
   .flecheHero{
@@ -154,6 +156,8 @@ nav {
    margin-top: 300px;
   }
 
+
+
 .bouton{
    font-size: 20px;
    font-weight: 500;
@@ -162,6 +166,8 @@ nav {
    letter-spacing: 0.8px;
    color: #ffffff;
    text-decoration: none;
+     width: fit-content;
+  display: inline-block;
 }
 
 .full{
@@ -172,6 +178,7 @@ nav {
 
 .bouton.full{
   padding: 20px 40px 20px 40px;
+  margin: 0px 50px 30px 0px;
 
 }
 
