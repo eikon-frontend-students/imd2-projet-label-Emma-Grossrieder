@@ -63,6 +63,14 @@
     font-weight: 200;
   }
 
+  @font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Nohemi-ExtraLight.woff2') format('woff2');
+      
+    font-style: normal;
+    font-weight: 100;
+  }
  
   
 
@@ -90,19 +98,52 @@ nav {
 
 .heroContainer{ 
   background-image: url("../pasbourreimg.png");   
-
-  background-position: center; 
   background-repeat: no-repeat;
-   content: "";
+  content: "";
   position: absolute;
-  inset: 0; /* top:0; right:0; bottom:0; left:0; */
-  background-image: url("../pasbourreimg.png");
-  background-size: cover; /* adapte l'image à la taille du conteneur */
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 1; /* derrière le contenu */
+  inset: 0; 
+  z-index: 1; 
   opacity: 1; 
-  margin-top: 140px;
+  margin-top: 140px;                   
+  background-size: cover;
+  background-position: center;
+  background:
+    linear-gradient(
+     to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 0) 50%,  
+    rgba(255, 0, 0, 0) 0%,    
+    rgba(255, 0, 0, 0) 0%
+    ),
+    url("../pasbourreimg.png");
+  }
+
+  .textNOMhero {
+    font-size: 40px;
+    font-weight: 100;
+    font-style: normal;
+    color: #ffffff;
+  }
+
+  .textTITREhero {
+    font-size: 100px;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    line-height: 115px;
+    margin-top: -40px;
+  }
+
+  .textHero{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heroContent{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   .flecheHero{
@@ -121,5 +162,16 @@ nav {
    letter-spacing: 0.8px;
    color: #ffffff;
    text-decoration: none;
+}
+
+.full{
+  color: black;
+  border-radius: 30px;
+  background-color: #ffffff;
+}
+
+.bouton.full{
+  padding: 20px 40px 20px 40px;
+
 }
 
