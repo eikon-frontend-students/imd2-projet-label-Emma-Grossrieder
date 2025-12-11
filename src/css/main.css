@@ -82,7 +82,7 @@ img {
 body {
   font-family: 'Nohemi', sans-serif;
   margin: 0px;
-  background-color: #5c5c5c;
+  background-color: #ffffff;
   color: white;
 }
 
@@ -96,13 +96,26 @@ nav {
    height: 100px;
   }
 
+.backgroundHero img{
+  margin-top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+.heroContainer{
+  position:relative;
+}
+
+/*.backgroundHero{
+
+  }
+
 .heroContainer{ 
-  background-image: url("../pasbourreimg.png");   
-  background-repeat: no-repeat;
+
   content: "";
   position: absolute;
   inset: 0; 
-  z-index: 1; 
+  z-index: -1; 
   opacity: 1; 
   margin-top: 140px;                   
   background-position: center;
@@ -115,7 +128,7 @@ nav {
     rgba(255, 0, 0, 0) 0%
     ),
     url("../pasbourreimg.png");
-  }
+  }*/
 
   .textNOMhero {
     font-size: 40px;
@@ -146,25 +159,25 @@ nav {
     flex-direction: row;   
     align-items: flex-end;
     justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    
   }
   
   .flecheHero{
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-   padding: 30px;
-   margin-top: 300px;
-  }
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+ }
 
 
 
 .bouton{
    font-size: 20px;
    font-weight: 500;
-   font-style: normal;
-   line-height: normal;
    letter-spacing: 0.8px;
-   color: #ffffff;
+   color: #000000;
+   border: #000000 1px solid;
    text-decoration: none;
      width: fit-content;
   display: inline-block;
@@ -179,6 +192,74 @@ nav {
 .bouton.full{
   padding: 20px 40px 20px 40px;
   margin: 0px 50px 30px 0px;
+}
 
+h1{color: #000;
+font-family: Nohemi;
+font-size: 110px;
+font-style: normal;
+font-weight: 900;
+text-transform: uppercase;}
+
+.colonne1{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 36px;
+
+
+}
+
+.colonne2{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+    gap: 36px;
+    margin-top: 80px;
+
+}
+
+.colonne3{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+    gap: 36px;
+
+}
+
+.colonne4{
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+    gap: 36px;
+        margin-top: 80px;
+
+
+}
+
+.compo-albums{
+  display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.sorties{
+  margin: 65px 65px 150px 65px;
+  display: flex;
+  flex-direction: column;
+align-items: center;}
+
+.bouton-sorties{
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: 0.8px;
+   color: #000000;
+   border: #000000 1px solid;
+   text-decoration: none;
+     width: fit-content;
+  display: inline-block;
+  padding: 20px 105px;
+  border-radius: 30px;
 }
 
