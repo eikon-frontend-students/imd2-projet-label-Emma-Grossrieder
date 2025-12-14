@@ -11,22 +11,26 @@
       <include src="./components/nav.html">
    </header>
    <div class="heroContainer">
-    <div class="backgroundHero">
-      <img src="pasbourreimg.png" alt="">
-    </div>
-    <div class="flecheHero">
-       <img src="img/svg/fleche-g.svg" alt="Hero" />
-       <img src="img/svg/fleche-d.svg" alt="Hero" />
-    </div>
-    <div class="heroContent">
+  <div class="backgroundHero" aria-hidden="true"></div>
+
+  <div class="heroContent">
+    <button class="fleche fleche-gauche" aria-label="Précédent">
+      <img src="img/svg/fleche-g.svg" alt="" aria-hidden="true">
+    </button>
+
     <div class="textHero">
-       <h3 class="textNOMhero">Sam Sauvage</h3>
-       <h2 class="textTITREhero">Pas bourré</h2>
-       </div>
-       <a href="#" class="bouton full">Voir plus</a>
-   
+      <div class="titrehero">
+      <p class="textNOMhero">Sam Sauvage</p>
+      <p class="textTITREhero">Pas bourré</p>
+      </div>
+      <a href="#" class="bouton full">Voir le clip</a>
     </div>
-   </div>
+
+    <button class="fleche fleche-droite" aria-label="Suivant">
+      <img src="img/svg/fleche-d.svg" alt="" aria-hidden="true">
+    </button>
+  </div>
+</div>
    <main>
 
         <div class="sorties">

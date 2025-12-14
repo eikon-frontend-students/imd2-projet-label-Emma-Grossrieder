@@ -91,44 +91,48 @@ nav {
    flex-direction: row;
    justify-content: space-between;
    align-items: center;
-   padding: 20px;
+   padding: 20px 50px;
    background-color: black;
-   height: 100px;
+   height: 70px;
   }
 
-.backgroundHero img{
-  margin-top: 0px;
-  width: 100%;
-  z-index: -1;
-}
-
-.heroContainer{
-  position:relative;
-}
-
-/*.backgroundHero{
-
+  .boutonNav{
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: 0.8px;
+   color: #ffffff;
+   text-decoration: none;
+   width: fit-content;
+   display: inline-block;
   }
 
-.heroContainer{ 
-
-  content: "";
+.backgroundHero {
   position: absolute;
-  inset: 0; 
-  z-index: -1; 
-  opacity: 1; 
-  margin-top: 140px;                   
-  background-position: center;
+  inset: 0;
+  z-index: 1;
+
   background:
     linear-gradient(
-     to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 0, 0, 0) 50%,  
-    rgba(255, 0, 0, 0) 0%,    
-    rgba(255, 0, 0, 0) 0%
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.6) 10%,
+      rgba(0, 0, 0, 0) 60%
     ),
-    url("../pasbourreimg.png");
-  }*/
+    url("../img/hero/herotest.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.heroContainer {
+  position: relative;  
+  min-height: 800px;
+  overflow: hidden;
+}
+
+
 
   .textNOMhero {
     font-size: 40px;
@@ -147,30 +151,66 @@ nav {
     margin: 0px;
   }
 
-  .textHero{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  .titrehero{
+
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
   }
 
-  .heroContent{
-    margin-left: 50px;
-    display: flex;
-    flex-direction: row;   
-    align-items: flex-end;
-    justify-content: space-between;
-    position: absolute;
-    top: 60%;
-    
-  }
+  .textHero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 650px;
+  z-index: 2;
+  text-align: left;
+  margin-left: 0;
+  margin-top: 450px;
+
+}
+
+  .heroContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;        
+  justify-content: flex-start;    
+  gap: 40px;                  
+  padding: 80px 20px 80px 80px;  
+  min-height: 400px;    
+  }      
   
-  .flecheHero{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
- }
+ 
 
+  .fleche {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  width: 64px;
+  height: 64px;
+  pointer-events: auto;
+}
 
+.fleche-gauche {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fleche-droite {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 .bouton{
    font-size: 20px;
@@ -194,12 +234,14 @@ justify-content: space-between;
   margin: 0px 50px 30px 0px;
 }
 
-h1{color: #000;
-font-family: Nohemi;
-font-size: 110px;
-font-style: normal;
-font-weight: 900;
-text-transform: uppercase;}
+h1{
+  color: #000;
+  font-family: Nohemi;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 900;
+  text-transform: uppercase;
+}
 
 .colonne1{
   display: flex;
@@ -211,9 +253,9 @@ text-transform: uppercase;}
 }
 
 .colonne2{
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
     gap: 36px;
     margin-top: 80px;
 
@@ -223,7 +265,7 @@ text-transform: uppercase;}
   display: flex;
   flex-direction: column;
   max-width: 300px;
-    gap: 36px;
+  gap: 36px;
 
 }
 
@@ -231,16 +273,16 @@ text-transform: uppercase;}
   display: flex;
   flex-direction: column;
   max-width: 300px;
-    gap: 36px;
-        margin-top: 80px;
+  gap: 36px;
+  margin-top: 80px;
 
 
 }
 
 .compo-albums{
   display: flex;
-    gap: 20px;
-    justify-content: center;
+  gap: 20px;
+  justify-content: center;
 }
 
 
@@ -248,16 +290,16 @@ text-transform: uppercase;}
   margin: 65px 65px 150px 65px;
   display: flex;
   flex-direction: column;
-align-items: center;}
+  align-items: center;}
 
 .bouton-sorties{
-   font-size: 20px;
-   font-weight: 500;
-   letter-spacing: 0.8px;
-   color: #000000;
-   border: #000000 1px solid;
-   text-decoration: none;
-     width: fit-content;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  color: #000000;
+  border: #000000 1px solid;
+  text-decoration: none;
+  width: fit-content;
   display: inline-block;
   padding: 20px 105px;
   border-radius: 30px;
