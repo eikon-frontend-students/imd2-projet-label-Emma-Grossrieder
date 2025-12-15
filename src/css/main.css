@@ -125,12 +125,14 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-top: -30px;
+  padding-bottom: 300px;
 }
 
 
 .heroContainer {
   position: relative;  
-  min-height: 800px;
+  min-height: 900px;
   overflow: hidden;
 }
 
@@ -154,7 +156,6 @@ nav {
   }
 
   .titrehero{
-
   display: flex;
   flex-direction: column;
   text-align: left;
