@@ -216,12 +216,17 @@ nav {
    font-size: 20px;
    font-weight: 500;
    letter-spacing: 0.8px;
-   color: #000000;
-   border: #000000 1px solid;
+   
    text-decoration: none;
-     width: fit-content;
-  display: inline-block;
+   width: fit-content;
+   display: inline-block;
+  padding: 20px 105px;
+  border-radius: 30px;
+  margin-top: 120px;
 }
+
+
+
 
 .full{
   color: black;
@@ -234,14 +239,7 @@ nav {
   margin: 0px 50px 30px 0px;
 }
 
-h1{
-  color: #000;
-  font-family: Nohemi;
-  font-size: 110px;
-  font-style: normal;
-  font-weight: 900;
-  text-transform: uppercase;
-}
+
 
 .colonne1{
   display: flex;
@@ -290,18 +288,166 @@ h1{
   margin: 65px 65px 150px 65px;
   display: flex;
   flex-direction: column;
-  align-items: center;}
-
-.bouton-sorties{
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.8px;
-  color: #000000;
-  border: #000000 1px solid;
-  text-decoration: none;
-  width: fit-content;
-  display: inline-block;
-  padding: 20px 105px;
-  border-radius: 30px;
+  align-items: center;
 }
 
+.artistesSection {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundArtistes {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("../img/fond/fondcinq7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.artistesContent {
+  position: relative;
+  z-index: 1;
+  padding: 150px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+
+
+
+.h1{
+  font-family: Nohemi;
+  font-size: 110px;
+  font-style: normal;
+  font-weight: 900;
+
+}
+.blanc{
+  color: white;
+}
+
+.noir{
+  color: black;
+}
+
+.texteCardDroite{
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 50px;
+  
+}
+
+.infosCardDroite{
+  display: flex;
+  flex-direction: column;
+  padding-left: 200px;
+  padding-top: 30px;
+  width: 800px;
+  background-color: rgb(0, 0, 0);
+}
+
+.artisteCardDroite{
+display: flex;
+flex-direction: row;
+align-items: end;
+}
+
+.artisteCardDroite img{
+  height: 500px;
+  position: absolute;
+  z-index: 2;
+  padding-left: 20px;
+}
+
+
+.texteCardGauche{
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 50px;
+  text-align: right;
+   align-items: end;  
+
+}
+
+.infosCardGauche{
+  display: flex;
+  flex-direction: column;
+  padding-right: 200px;
+  padding-left: 10px;
+  padding-top: 30px;
+  justify-content: end;
+  width: 800px;
+  align-items: end;
+  text-align: right; 
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+
+.artisteCardGauche{
+display: flex;
+flex-direction: row;
+align-items: end;
+justify-content: end;
+}
+
+.artisteCardGauche img{
+  height: 500px;
+  position: absolute;
+  z-index: 2;
+  padding-right: 20px;
+  margin: 0px;
+}
+
+
+
+.titreCard{
+  font-size: 35px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+.texteCard{
+  font-size: 24px;
+  font-weight: 200;
+  color: rgba(128, 128, 128, 1);  
+  margin: 0;
+}
+
+.artistesSection{
+position: relative;
+gap: 100px;
+}
+
+.bouton.blanc{
+  color: rgb(255, 255, 255);
+  border: #ffffff 2px solid;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  z-index: 5;
+  left: 50%;
+  bottom: 40px;           
+  transform: translateX(-50%);
+  margin-bottom: 150px;
+}
+
+.bouton.noir{
+  color: #000000;
+   border: #000000 2px solid;
+}
+
+
+h1.blanc{
+  margin-bottom: 200px;
+}
