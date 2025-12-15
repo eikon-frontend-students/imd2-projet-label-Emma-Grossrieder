@@ -297,7 +297,7 @@ nav {
   overflow: hidden;
 }
 
-.backgroundArtistes {
+.backgroundCinq7 {
   position: absolute;
   inset: 0;
   z-index: 0;
@@ -450,4 +450,126 @@ gap: 100px;
 
 h1.blanc{
   margin-bottom: 200px;
+}
+
+label{
+  display: flex;
+  flex-direction: column;
+  padding-left: 80px;
+}
+.presentationLabel{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 850px;
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+
+.textePara{
+  font-family: 'Nohemi', sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0px;
+}
+
+footer{
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 150px;
+padding-bottom: 50px;  
+margin-top: 100px;
+}
+
+.titreFooter{
+  font-family: 'Nohemi', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  color: white;
+  opacity: 40%;
+  margin: 0px;
+}
+
+.texteFooter{
+  font-family: 'Nohemi', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  width: 260px;
+  line-height: 150%;
+}
+
+.texteCard{
+  font-size: 20px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.50);
+  
+}
+
+.envois{
+  color: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 5px;
+}
+
+.iconFooter{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+.texteCopright{
+  font-family: 'Nohemi', sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: white;
+  margin: 0px;
+  padding-top: 100px;
+}
+
+.contenuColonne{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.colonneFooter{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.souligne{
+text-decoration: underline solid white;  
+text-decoration-skip-ink: auto;    
+text-decoration-thickness: 1.5px; 
+}
+
+.mail{
+  border: #ffffff 2px solid;
+  margin: 0;
+  border-radius: 30px;
+  width: 400px;
+  height: 45px;
+display: flex;
+align-items: center;
+padding-left: 20px;
+}
+
+.backgroundArtistes{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("../img/fond/fondcinq7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
