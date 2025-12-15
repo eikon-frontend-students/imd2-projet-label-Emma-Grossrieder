@@ -869,3 +869,63 @@ padding-left: 70px;}
 
 
 
+
+@media (max-width: 700px) {
+
+  nav { padding: 10px 16px; height: 64px; }
+  nav .boutonNav { display: none !important; } 
+  nav img { max-height: 40px; } 
+
+  .heroContent,
+  .textHero { flex-direction: column; align-items: flex-start; gap: 12px; margin-top: 120px; padding: 20px 12px; }
+  .heroArtisteContainer { padding-top: 100px; padding-left: 20px; min-height: 320px; background-position: center top; }
+  .heroArtiste { font-size: 72px; line-height: 1; }
+  .textTITREhero { font-size: 28px; }
+
+  .h1 { font-size: 45px !important; }
+  .titreCard { font-size: 18px; }
+  .texteCard { font-size: 14px; line-height: 1.3; }
+
+  .compo-albums { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; }
+  .compo-albums > * { flex: 0 0 48%; max-width: 48%; box-sizing: border-box; }
+
+  .artisteCardDroite, .artisteCardGauche {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    height: auto;
+    padding: 12px;
+  }
+  .artisteCardDroite img, .artisteCardGauche img {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    right: 0;
+    left: 0;
+  }
+  .infosCardDroite, .infosCardGauche {
+    width: calc(100% - 100px);
+    padding: 8px;
+    background: transparent;
+  }
+  .texteCardDroite, .texteCardGauche { width: 100%; gap: 6px; }
+  .titreCard { font-size: 18px; }
+  .texteCard { font-size: 14px; }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 16px;
+    align-items: center;
+    text-align: center;
+  }
+  footer .colonneFooter, footer .contenuColonne { gap: 12px; align-items: center; }
+
+  .concert { flex-direction: column; align-items: flex-start; gap: 8px; padding: 12px 16px; }
+  .concert .bouton { align-self: flex-start; margin-top: 0; }
+
+  .produitsShop { grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 0 12px; }
+
+  .fondDepuisTours .backgroundArtistes { height: 1000px; background-position: center bottom; opacity: 0.95; }
+}
