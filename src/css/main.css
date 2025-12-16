@@ -156,49 +156,49 @@ nav {
   }
 
   .titrehero{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 
   }
 
   .textHero {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 650px;
-  z-index: 2;
-  text-align: left;
-  margin-left: 0;
-  margin-top: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 650px;
+    z-index: 2;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 450px;
 
 }
 
   .heroContent {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;        
-  justify-content: flex-start;    
-  gap: 40px;                  
-  padding: 80px 20px 80px 80px;  
-  min-height: 400px;    
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;        
+    justify-content: flex-start;    
+    gap: 40px;                  
+    padding: 80px 20px 80px 80px;  
+    min-height: 400px;    
   }      
   
  
 
   .fleche {
-  background: transparent;
-  border: none;
-  padding: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 3;
-  width: 64px;
-  height: 64px;
-  pointer-events: auto;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 3;
+    width: 64px;
+    height: 64px;
+    pointer-events: auto;
 }
 
 .fleche-gauche {
@@ -218,14 +218,14 @@ nav {
 .bouton{
    font-size: 20px;
    font-weight: 500;
-   letter-spacing: 0.8px;
+
    
    text-decoration: none;
    width: fit-content;
    display: inline-block;
-  padding: 20px 105px;
-  border-radius: 30px;
-  margin-top: 120px;
+   padding: 20px 105px;
+   border-radius: 30px;
+   margin-top: 120px;
 }
 
 
@@ -289,6 +289,7 @@ nav {
 
 .sorties{
   margin: 65px 65px 150px 65px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
